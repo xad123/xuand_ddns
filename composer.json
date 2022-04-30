@@ -29,7 +29,9 @@
         "jianyan74/php-excel": "^1.0",
         "zhongshaofa/easy-admin": "^1.0.2",
         "ext-json": "*",
-        "zhongshaofa/thinkphp-log-trace": "^1.0"
+        "zhongshaofa/thinkphp-log-trace": "^1.0",
+        "topthink/think-migration": "^3.0",
+        "tencentcloud/dnspod": "^3.0"
     },
     "require-dev": {
         "symfony/var-dumper": "^4.2",
