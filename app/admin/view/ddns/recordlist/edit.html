@@ -1,0 +1,71 @@
+<div class="layuimini-container">
+    <form id="app-form" class="layui-form layuimini-form">
+        
+        <div class="layui-form-item">
+            <label class="layui-form-label">域名</label>
+            <div class="layui-input-block">
+                <input type="text" name="name" class="layui-input" lay-verify="required" placeholder="请输入域名" value="{$row.name|default=''}">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">punycode编码后的域名</label>
+            <div class="layui-input-block">
+                <input type="text" name="punyCode" class="layui-input"  placeholder="请输入punycode编码后的域名" value="{$row.punyCode|default=''}">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">域名的等级</label>
+            <div class="layui-input-block">
+                <input type="text" name="grade" class="layui-input"  placeholder="请输入域名的等级" value="{$row.grade|default=''}">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">域名所有者的邮箱账号</label>
+            <div class="layui-input-block">
+                <input type="text" name="owner" class="layui-input"  placeholder="请输入域名所有者的邮箱账号" value="{$row.owner|default=''}">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">域名扩展状态信息：notexist、dnserror、“”/域名为注册、DNS设置错误、正常</label>
+            <div class="layui-input-block">
+                <input type="text" name="ext_status" class="layui-input"  placeholder="请输入域名扩展状态信息：notexist、dnserror、“”/域名为注册、DNS设置错误、正常" value="{$row.ext_status|default=''}">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">域名下的解析记录默认的TTL值</label>
+            <div class="layui-input-block">
+                <input type="text" name="ttl" class="layui-input"  placeholder="请输入域名下的解析记录默认的TTL值" value="{$row.ttl|default=''}">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">当前域名允许的最小的TTL</label>
+            <div class="layui-input-block">
+                <input type="text" name="min_ttl" class="layui-input"  placeholder="请输入当前域名允许的最小的TTL" value="{$row.min_ttl|default=''}">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">域名应该设置的NS地址</label>
+            <div class="layui-input-block">
+                <input type="text" name="dnspod_ns" class="layui-input"  placeholder="请输入域名应该设置的NS地址" value="{$row.dnspod_ns|default=''}">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">域名的状态：enable、pause、spam、lock/正常、暂停解析、已被封禁、已锁定</label>
+            <div class="layui-input-block">
+                <input type="text" name="status" class="layui-input"  placeholder="请输入域名的状态：enable、pause、spam、lock/正常、暂停解析、已被封禁、已锁定" value="{$row.status|default=''}">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">域名所在项目的id</label>
+            <div class="layui-input-block">
+                <input type="text" name="q_project_id" class="layui-input"  placeholder="请输入域名所在项目的id" value="{$row.q_project_id|default=''}">
+            </div>
+        </div>
+        <div class="hr-line"></div>
+        <div class="layui-form-item text-center">
+            <button type="submit" class="layui-btn layui-btn-normal layui-btn-sm" lay-submit>确认</button>
+            <button type="reset" class="layui-btn layui-btn-primary layui-btn-sm">重置</button>
+        </div>
+
+    </form>
+</div>
