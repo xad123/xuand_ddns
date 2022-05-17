@@ -3,12 +3,12 @@ define(["jquery", "easy-admin"], function ($, ea) {
     var init = {
         table_elem: '#currentTable',
         table_render_id: 'currentTableRenderId',
-        index_url: 'ddns.recordlist/index',
-        add_url: 'ddns.recordlist/add',
-        edit_url: 'ddns.recordlist/edit',
-        delete_url: 'ddns.recordlist/delete',
-        export_url: 'ddns.recordlist/export',
-        modify_url: 'ddns.recordlist/modify',
+        index_url: 'ddns.record_list/index',
+        add_url: 'ddns.record_list/add',
+        edit_url: 'ddns.record_list/edit',
+        delete_url: 'ddns.record_list/delete',
+        export_url: 'ddns.record_list/export',
+        modify_url: 'ddns.record_list/modify',
     };
 
     var Controller = {

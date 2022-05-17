@@ -7,4 +7,4 @@
  */
 use think\facade\Route;
 
-Route::rule('ddns/getlist','\app\admin\controller\ddns\Recordlist@getRecordList','get');
+Route::rule('ddns/getlist','Recordlist/getRecordList','get');
